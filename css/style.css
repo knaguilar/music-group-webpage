@@ -1,0 +1,40 @@
+*{
+	/*outline: 1px solid red !important;*/
+	box-sizing: border-box;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+.title {
+	text-align: center;
+}
+
+.slideshow {
+	margin: 0 auto;
+}
+
+.nav-menu {
+	width: 100%
+}
+
+.nav-menu ul {
+	list-style-type: none;
+	width: 100%;
+}
+
+.nav-menu li {
+    float: left;
+	border-right: 1px solid #bbb;
+	width: 25%;
+	text-align: center;
+}
+
+.nav-menu li:last-child {
+    border-right: none;
+}
+
+.img-responsive {
+	margin: 0 auto;
+}
