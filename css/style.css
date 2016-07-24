@@ -11,6 +11,13 @@
 	text-align: right;
 }
 
+.social-media li {
+	float: left;
+	width: 25%;
+	font-size: 30px;
+	padding: 5%;
+}
+
 .mobile {
 	text-align: center;
 }
@@ -23,7 +30,7 @@
 	width: 100%
 }
 
-.nav-menu ul {
+.nav-menu ul, .social-media ul {
 	list-style-type: none;
 	width: 100%;
 }
