@@ -8,6 +8,10 @@
 }
 
 .title {
+	text-align: right;
+}
+
+.mobile {
 	text-align: center;
 }
 
