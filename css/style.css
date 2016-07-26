@@ -23,6 +23,8 @@ header {
 
 .title {
 	text-align: right;
+	font-family: 'Parisienne', cursive;
+	font-size: 40px;
 }
 
 .social-media li {
