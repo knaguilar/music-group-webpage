@@ -85,3 +85,10 @@ header {
 	padding-bottom: 20px;
 	margin: 0 auto;
 }
+
+/*TODO: fix for smaller screens*/
+@media screen and (max-width: 401px) {
+  .info-boxes {
+  	display: none;
+  	}   /* hide it elsewhere */
+}
