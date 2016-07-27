@@ -34,10 +34,6 @@ header {
 	padding: 5%;
 }
 
-.greca {
-	max-width: 100%;
-}
-
 /*For large displays TODO: smaller displays*/
 .greca img {
 	height: 20px;
@@ -49,10 +45,6 @@ header {
 
 .mobile {
 	text-align: center;
-}
-
-.slideshow {
-	margin: 0 auto;
 }
 
 .nav-menu {
@@ -77,4 +69,8 @@ header {
 
 .img-responsive {
 	margin: 0 auto;
+}
+
+.slideshow {
+	height: 100vh;
 }
