@@ -73,4 +73,15 @@ header {
 
 .slideshow {
 	height: 100vh;
+	position: relative;
+}
+
+.info-boxes {
+	position: absolute;
+	bottom: 0;
+}
+
+.welcome-video, .extra-space, .upcoming-events {
+	padding-bottom: 20px;
+	margin: 0 auto;
 }
