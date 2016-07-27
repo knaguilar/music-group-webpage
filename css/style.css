@@ -8,15 +8,15 @@
 }
 
 header {
-	background: yellow;
+	background: red;
  /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(254,192,25,1), rgba(254,192,25,0));
+    background: -webkit-linear-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
  /*Safari 5.1-6*/
-    background: -o-linear-gradient(rgba(254,192,25,1), rgba(254,192,25,0));
+    background: -o-linear-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
  /*Opera 11.1-12*/
-    background: -moz-linear-gradient(rgba(254,192,25,1), rgba(254,192,25,0));
+    background: -moz-linear-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
  /*Fx 3.6-15*/
-    background: linear-gradient(rgba(254,192,25,1), rgba(254,192,25,0));
+    background: linear-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
  /*Standard*/
 	color: #fff;
 }
@@ -24,7 +24,7 @@ header {
 .title {
 	text-align: right;
 	font-family: 'Parisienne', cursive;
-	font-size: 40px;
+	font-size: 50px;
 }
 
 .social-media li {
