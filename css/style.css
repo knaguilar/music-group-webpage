@@ -7,6 +7,10 @@
 	width: 100%;
 }
 
+body, a {
+	color: #fff;
+}
+
 header {
 	background: red;
  /* For browsers that do not support gradients */
@@ -18,7 +22,6 @@ header {
  /*Fx 3.6-15*/
 	background: linear-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
  /*Standard*/
-	color: #fff;
 }
 
 .title {
@@ -47,20 +50,20 @@ header {
 	text-align: center;
 }
 
-.nav-menu {
-	width: 100%;
-}
-
-.nav-menu ul, .social-media ul {
+.nav-menu ul, .social-media ul, .footer-menu ul {
 	list-style-type: none;
 	width: 100%;
 }
 
-.nav-menu li {
+.nav-menu li, .footer-menu li {
 	float: left;
-	border-right: 1px solid #bbb;
 	width: 25%;
 	text-align: center;
+}
+
+#contact {
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .nav-menu li:last-child {
@@ -86,9 +89,30 @@ header {
 	margin: 0 auto;
 }
 
+.footer-menu nav ul {
+	padding: 8%;
+
+}
+
+footer {
+	background: red;
+ /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
+ /*Safari 5.1-6*/
+	background: -o-radial-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
+ /*Opera 11.1-12*/
+	background: -moz-radial-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
+ /*Fx 3.6-15*/
+	background: radial-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
+}
+
+#logo p {
+	text-align: center;
+}
+
 /*TODO: fix for smaller screens*/
 @media screen and (max-width: 401px) {
   .info-boxes {
   	display: none;
-  	}   /* hide it elsewhere */
+  	}
 }
