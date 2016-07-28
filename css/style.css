@@ -11,7 +11,7 @@ body, a {
 	color: #fff;
 	font-family: 'Roboto Condensed', sans-serif;
 }
-
+/*Background color on header and footer*/
 header {
 	background: red;
  /* For browsers that do not support gradients */
@@ -22,66 +22,7 @@ header {
 	background: -moz-linear-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
  /*Fx 3.6-15*/
 	background: linear-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
- /*Standard*/
-}
-
-.title {
-	/*On right during big screens, change to center on smaller screens*/
-	text-align: right;
-	font-family: 'Parisienne', cursive;
-	font-size: 50px;
-}
-
-.social-media li {
-	padding: 10px;
-}
-
-#header-social li, article h3 {
-	font-size: 30px;
-}
-
-#footer-social li, .nav-menu li {
-	font-size: 20px;
-}
-
-/*For large displays TODO: smaller displays*/
-.greca img {
-	height: 20px;
-	margin: 0 auto;
-	display: block;
-	padding-left: 50px;
-
-}
-
-.mobile, .nav-menu li, .welcome-video, .upcoming-events, article h3{
-	text-align: center;
-}
-
-.nav-menu ul, .social-media ul, .footer-menu ul {
-	list-style-type: none;
-	width: 100%;
-}
-
-.nav-menu li {
-	/*for smaller screens, float center*/
-	float: left;
-	width: 25%;
-}
-
-.nav-menu li:last-child {
-	border-right: none;
-}
-
-.img-responsive {
-	margin: 0 auto;
-}
-
-.welcome-video, .upcoming-events {
-	padding-bottom: 20px;
-}
-
-article {
-	border: 5px solid white;
+ /*Standard*/;
 }
 
 footer {
@@ -96,6 +37,78 @@ footer {
 	background: radial-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
 }
 
+/*Inside header elements*/
+
+.title {
+/*On right during big screens, change to center on smaller screens*/
+	text-align: right;
+	font-family: 'Parisienne', cursive;
+	font-size: 50px;
+}
+
+.social-media li {
+	padding: 10px;
+}
+
+#header-social li, article h3 {
+	font-size: 30px;
+}
+
+/*Adjustements to nav bar*/
+.nav-menu li, #footer-social li {
+	font-size: 20px;
+}
+
+.mobile, .nav-menu li, .welcome-video, .upcoming-events, article h3 {
+	text-align: center;
+}
+
+.nav-menu ul, .social-media ul, .footer-menu ul {
+	list-style-type: none;
+	width: 100%;
+}
+
+.nav-menu li {
+/*for smaller screens, float center*/
+	float: left;
+	width: 25%;
+}
+
+.nav-menu li:last-child {
+	border-right: none;
+}
+
+/*For large displays TODO: smaller displays*/
+.greca img {
+	height: 20px;
+	margin: 0 auto;
+	display: block;
+	padding-left: 50px;
+}
+
+.img-responsive {
+	margin: 0 auto;
+}
+
+/*Elements inside Slideshow*/
+
+.welcome-video, .upcoming-events {
+	padding-bottom: 20px;
+}
+
+article {
+	border: 5px solid white;
+}
+
+.slideshow {
+	height: 100vh;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+/*Elements inside footer*/
+
 .social-media ul, .footer-menu ul, .slideshow, .credit-logo {
 	display: flex;
 	flex-direction: row;
@@ -108,13 +121,6 @@ footer {
 .footer-menu ul {
 	justify-content: space-around;
 	align-items: center;
-}
-
-.slideshow {
-	height: 100vh;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-end;
 }
 
 .credit-logo {
