@@ -1,5 +1,5 @@
 * {
-	/*outline: 1px solid red !important;*/
+	outline: 1px solid red !important;
 	box-sizing: border-box;
 }
 
@@ -83,7 +83,7 @@ footer {
 	height: 20px;
 	margin: 0 auto;
 	display: block;
-	padding-left: 50px;
+/*	padding-left: 50px;*/
 }
 
 .img-responsive {
@@ -100,6 +100,11 @@ article {
 	border: 5px solid white;
 }
 
+.social-media ul, .footer-menu ul, .slideshow, .credit-logo {
+	display: flex;
+	flex-direction: row;
+}
+
 .slideshow {
 	height: 100vh;
 	flex-wrap: wrap;
@@ -109,13 +114,10 @@ article {
 
 /*Elements inside footer*/
 
-.social-media ul, .footer-menu ul, .slideshow, .credit-logo {
-	display: flex;
-	flex-direction: row;
-}
-
 .social-media ul {
 	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 .footer-menu ul {
@@ -128,10 +130,42 @@ article {
 	align-items: center;
 }
 
-.footer-menu ul {
-	padding-top: 8px;
+.footer-menu ul, #credit {
+	padding-top: 17px;
 }
 
 /*TODO: fix for smaller screens*/
 @media screen and (max-width: 401px) {
+	.title {
+		text-align: center;
+	}
+	.greca {
+		padding-left: 10px;
+	}
+	.nav-menu li, .footer-menu li {
+		font-size: 15px;
+	}
+
+	.nav-menu ul, .footer-menu ul, .social-media ul, #credit {
+		padding-left: 0;
+		padding-top: 0;
+	}
+
+	.welcome {
+		width: 300px;
+		height: 169px;
+	}
+
+	.fb-plugin {
+		width: 300px;
+		height: 300px;
+	}
+	.slideshow {
+		justify-content: center;
+		height: 120vh;
+	}
+
+	.credit-logo {
+		justify-content: center;
+	}
 }
