@@ -30,11 +30,12 @@ header {
 	font-size: 50px;
 }
 
-.social-media li {
-	float: left;
-	width: 25%;
+#header-social li {
 	font-size: 30px;
-	padding: 5%;
+}
+
+#footer-social li {
+	font-size: 20px;
 }
 
 /*For large displays TODO: smaller displays*/
@@ -55,15 +56,10 @@ header {
 	width: 100%;
 }
 
-.nav-menu li, .footer-menu li {
+.nav-menu li {
 	float: left;
 	width: 25%;
 	text-align: center;
-}
-
-#contact {
-	padding-left: 5px;
-	padding-right: 5px;
 }
 
 .nav-menu li:last-child {
@@ -89,11 +85,6 @@ header {
 	margin: 0 auto;
 }
 
-.footer-menu nav ul {
-	padding: 8%;
-
-}
-
 footer {
 	background: red;
  /* For browsers that do not support gradients */
@@ -106,8 +97,22 @@ footer {
 	background: radial-gradient(rgba(254,27,10,1), rgba(127,32,25,1));
 }
 
-#logo p {
-	text-align: center;
+.footer-menu ul, .social-media ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-menu ul {
+	padding-top: 8px;
+}
+
+.credit-logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 /*TODO: fix for smaller screens*/
