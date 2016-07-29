@@ -51,7 +51,7 @@ footer {
 	padding: 10px;
 }
 
-#header-social li, article h3 {
+#header-social li, .extra-space h3 {
 	font-size: 30px;
 }
 
@@ -60,7 +60,7 @@ footer {
 	font-size: 20px;
 }
 
-.mobile, .nav-menu li, .welcome-video, .upcoming-events, article h3 {
+.mobile, .nav-menu li, .welcome-video, .upcoming-events, .extra-space h3 {
 	text-align: center;
 }
 
@@ -97,7 +97,7 @@ footer {
 	padding-bottom: 20px;
 }
 
-article {
+.extra-space {
 	border: 5px solid white;
 }
 
@@ -135,8 +135,38 @@ article {
 	padding-top: 17px;
 }
 
-/*TODO: fix for smaller screens*/
-@media screen and (max-width: 401px) {
+/*For landscape mode small display*/
+
+@media screen and (min-height: 0) and (max-height: 360) and (orientation: landscape) {
+	.welcome {
+		width: 0px;
+		height: 0px;
+	}
+
+	.fb-plugin {
+		width: 0px;
+		height: 0px;
+	}
+}
+/*For small heights or landscape*/
+@media screen and (min-height: 361) and (max-height: 537px) {
+	.welcome {
+		width: 250px;
+		height: 129px;
+	}
+
+	.fb-plugin {
+		width: 200px;
+		height: 150px;
+	}
+
+	.slideshow {
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+/*For mobile*/
+@media screen and (max-width: 534px) and (min-height: 538px) {
 	.title {
 		text-align: center;
 	}
@@ -171,5 +201,21 @@ article {
 
 	.credit-logo {
 		justify-content: center;
+		text-align: center;
 	};
+}
+/*For tablets*/
+@media screen and (min-width: 535px) and (max-width: 990px) {
+	.title {
+		text-align: center;
+	}
+
+	.credit-logo {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.slideshow {
+		justify-content: center;
+	}
 }
