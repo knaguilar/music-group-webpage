@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 }
 
-.container-fluid {
+.container-fluid, .section {
 	width: 100%;
 }
 
@@ -99,6 +99,7 @@ footer {
 
 .extra-space {
 	border: 5px solid white;
+	margin: 0 auto;
 }
 
 .social-media ul, .footer-menu ul, .slideshow, .credit-logo {
@@ -137,34 +138,27 @@ footer {
 
 /*For landscape mode small display*/
 
-@media screen and (min-height: 0) and (max-height: 360) and (orientation: landscape) {
-	.welcome {
-		width: 0px;
-		height: 0px;
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 780px)
+and (orientation: landscape) {
+	/*TODO: fix location of Book Us Box*/
+	section {
+		display: none;
+	}
+	.extra-space {
+		margin: auto;
+	}
+	.title {
+		text-align: center;
 	}
 
-	.fb-plugin {
-		width: 0px;
-		height: 0px;
-	}
-}
-/*For small heights or landscape*/
-@media screen and (min-height: 361) and (max-height: 537px) {
-	.welcome {
-		width: 250px;
-		height: 129px;
-	}
-
-	.fb-plugin {
-		width: 200px;
-		height: 150px;
-	}
-
-	.slideshow {
+	.credit-logo {
 		justify-content: center;
-		flex-direction: column;
+		text-align: center;
 	}
 }
+
 /*For mobile*/
 @media screen and (max-width: 534px) and (min-height: 538px) {
 	.title {
@@ -189,6 +183,11 @@ footer {
 		height: 169px;
 	}
 
+	section, .welcome-video, .upcoming-events {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
 	.fb-plugin {
 		width: 300px;
 		height: 300px;
@@ -204,8 +203,8 @@ footer {
 		text-align: center;
 	};
 }
-/*For tablets*/
-@media screen and (min-width: 535px) and (max-width: 990px) {
+For tablets
+@media screen and (min-width: 535px) and (max-width: 990px) and (min-height: 640) {
 	.title {
 		text-align: center;
 	}
