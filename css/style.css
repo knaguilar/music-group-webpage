@@ -84,7 +84,8 @@ footer {
 	height: 20px;
 	margin: 0 auto;
 	display: block;
-/*	padding-left: 50px;*/;
+/*	padding-left: 50px;*/
+	;
 }
 
 .img-responsive {
@@ -102,7 +103,6 @@ footer {
 	margin: 0 auto;
 	margin-top: 50px;
 	margin-bottom: 20px;
-
 }
 
 .social-media ul, .footer-menu ul, .slideshow, .credit-logo {
@@ -139,7 +139,6 @@ footer {
 	padding-top: 17px;
 }
 
-
 @media only screen and (orientation: landscape) {
 	.title {
 		text-align: right;
@@ -147,11 +146,11 @@ footer {
 
 	.credit-logo {
 		justify-content: flex-end;
-
 	}
+
 	.extra_space {
 		margin: 0 auto;
-	}
+	};
 }
 
 /*For landscape mode small display*/
@@ -165,9 +164,11 @@ and (max-device-width : 375px) {
 	.welcome-video, .upcoming-events {
 		display: none;
 	}
+
 	.extra-space {
 		margin: 0 auto;
 	}
+
 	.title {
 		text-align: center;
 	}
@@ -176,6 +177,7 @@ and (max-device-width : 375px) {
 		justify-content: center;
 		text-align: center;
 	}
+
 	.nav-menu ul {
 		padding-left: 0;
 	}
@@ -183,7 +185,7 @@ and (max-device-width : 375px) {
 	.slideshow {
 		justify-content: center;
 		align-items: center;
-	}
+	};
 }
 
 /*TODO: Media querie for 361 - 394 make the boxes smaller...414?*/
@@ -212,8 +214,7 @@ and (max-device-width : 375px) {
 	/*.title {
 		text-align: center;
 	}*/
-
-	.greca {
+		.greca {
 		padding-left: 10px;
 	}
 
