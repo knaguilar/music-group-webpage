@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 }
 
-.container-fluid, .section {
+.container-fluid {
 	width: 100%;
 }
 
@@ -42,7 +42,7 @@ footer {
 
 .title {
 /*On right during big screens, change to center on smaller screens*/
-	text-align: right;
+	text-align: center;
 	font-family: 'Parisienne', cursive;
 	font-size: 50px;
 }
@@ -100,6 +100,9 @@ footer {
 .extra-space {
 	border: 5px solid white;
 	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+
 }
 
 .social-media ul, .footer-menu ul, .slideshow, .credit-logo {
@@ -110,7 +113,7 @@ footer {
 .slideshow {
 	height: 100vh;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-end;
 }
 
@@ -128,7 +131,7 @@ footer {
 }
 
 .credit-logo {
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -136,18 +139,34 @@ footer {
 	padding-top: 17px;
 }
 
-/*For landscape mode small display*/
 
+@media only screen and (orientation: landscape) {
+	.title {
+		text-align: right;
+	}
+
+	.credit-logo {
+		justify-content: flex-end;
+
+	}
+	.extra_space {
+		margin: 0 auto;
+	}
+}
+
+/*For landscape mode small display*/
+/*Adjusted from 780 to accomodate wider screens*/
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 780px)
-and (orientation: landscape) {
-	/*TODO: fix location of Book Us Box*/
-	section {
+and (orientation: landscape), screen and (min-device-width : 320px)
+and (max-device-width : 375px) {
+	/*Landscape and small device widths even if not landscape*/
+	.welcome-video, .upcoming-events {
 		display: none;
 	}
 	.extra-space {
-		margin: auto;
+		margin: 0 auto;
 	}
 	.title {
 		text-align: center;
@@ -157,13 +176,42 @@ and (orientation: landscape) {
 		justify-content: center;
 		text-align: center;
 	}
+	.nav-menu ul {
+		padding-left: 0;
+	}
+
+	.slideshow {
+		justify-content: center;
+		align-items: center;
+	}
 }
 
-/*For mobile*/
-@media screen and (max-width: 534px) and (min-height: 538px) {
-	.title {
+/*TODO: Media querie for 361 - 394 make the boxes smaller...414?*/
+@media screen and (min-width: 376) and (max-width: 414px) and (min-height: 538px) {
+	/*.title {
 		text-align: center;
+	}*/
+
+	.welcome {
+		width: 250px;
+		height: 141px;
 	}
+
+	.fb-plugin {
+		width: 250px;
+		height: 150px;
+	}
+
+	section {
+		padding-right: 0;
+	}
+
+
+/*For mobile*/
+@media screen and (min-width: 415) and (max-width: 534px) and (min-height: 538px) {
+	/*.title {
+		text-align: center;
+	}*/
 
 	.greca {
 		padding-left: 10px;
@@ -195,26 +243,11 @@ and (orientation: landscape) {
 
 	.slideshow {
 		justify-content: center;
-		height: 120vh;
+		height: 140vh;
 	}
 
 	.credit-logo {
 		justify-content: center;
 		text-align: center;
 	};
-}
-For tablets
-@media screen and (min-width: 535px) and (max-width: 990px) and (min-height: 640) {
-	.title {
-		text-align: center;
-	}
-
-	.credit-logo {
-		justify-content: center;
-		text-align: center;
-	}
-
-	.slideshow {
-		justify-content: center;
-	}
 }
