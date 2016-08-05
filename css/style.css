@@ -92,19 +92,6 @@ footer {
 	margin: 0 auto;
 }
 
-/*Inside about.html*/
-.about {
-	margin-top: 5%;
-	margin-bottom: 5%;
-	color: #000;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	align-content: center;
-}
-
-
 /*Elements inside Slideshow*/
 
 .welcome-video, .upcoming-events {
@@ -164,6 +151,21 @@ footer {
 	.extra_space {
 		margin: 0 auto;
 	};
+}
+
+/*Inside about & members page*/
+
+.about, .members {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color: #000;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 }
 
 /*For landscape mode small display*/
