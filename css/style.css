@@ -1,6 +1,7 @@
 * {
 	/*outline: 1px solid red !important;*/
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 .container-fluid {
@@ -139,20 +140,6 @@ footer {
 	padding-top: 17px;
 }
 
-@media only screen and (orientation: landscape) {
-	.title {
-		text-align: right;
-	}
-
-	.credit-logo {
-		justify-content: flex-end;
-	}
-
-	.extra_space {
-		margin: 0 auto;
-	};
-}
-
 /*Inside about & members page*/
 
 .about, .members {
@@ -166,6 +153,83 @@ footer {
 	align-items: center;
 	align-content: center;
 	justify-content: center;
+}
+
+.contact {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color: #000;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	height: 50vh;
+}
+
+form {
+	max-width: 80%;
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid red;
+    border-radius: 1em;
+}
+/*section of form*/
+label {
+    display: inline-block;
+    width: 33%;
+    text-align: left;
+    margin-bottom: 3%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*location where user inputs info*/
+input, textarea {
+    /* To give the same size to all text field */
+    width: 100%;
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+    margin-bottom: 3%;
+}
+
+/*the outer box where users input info*/
+input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    /*height: 100%;*/
+
+    /* To allow users to resize any textarea vertically
+       It does not work on all browsers */
+    resize: vertical;
+}
+
+/*the button to submit the form*/
+.button {
+    text-align: center;
+}
+
+@media only screen and (orientation: landscape) {
+	.title {
+		text-align: right;
+	}
+
+	.credit-logo {
+		justify-content: flex-end;
+	}
+
+	.extra_space {
+		margin: 0 auto;
+	};
 }
 
 /*For landscape mode small display*/

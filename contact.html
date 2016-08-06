@@ -56,22 +56,26 @@
 			</div>
 		</header>
 		<div class="row">
-			<div class="col-md-12 slideshow">
-				<!-- TODO: Welcome video embedded -->
-				<section class="col-sm-12 col-md-12 info-boxes">
-					<div class="col-sm-12 col-md-5 welcome-video">
-						<h4>Welcome!</h4>
-						<iframe width="350" height="197" class="welcome" src="https://www.youtube.com/embed/Lg4VpPuYoTw?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="col-sm-12 col-md-2 extra-space">
-						<h3>Book Us!</h3>
-					</div>
-					<div class="col-sm-12 col-md-5 upcoming-events">
-						<h4>Upcoming Events</h4>
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMariachiConnecticut%2F&tabs=events&width=350&height=200&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="350" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
-				</section>
+			<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 contact">
+				<form action="mailto:kn.aguilar7@gmail.com" method="post">
+				    <div>
+				        <label for="name">Name:</label>
+				        <input type="text" id="name" name="user_name" />
+				    </div>
+				    <div>
+				        <label for="mail">E-mail:</label>
+				        <input type="email" id="mail" name="user_mail" />
+				    </div>
+				    <div>
+				        <label for="msg">Message:</label>
+				        <textarea id="msg" name="user_message"></textarea>
+				    </div>
+				    <div class="button">
+				        <button type="submit">Send your message</button>
+				    </div>
+				</form>
 			</div>
+			<!-- TODO: inside content of page -->
 		</div>
 		<footer class="row">
 			<div class="col-md-12 hr">
@@ -112,19 +116,6 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/jQuery.js"></script>
-	<script src="js/jquery.backstretch.min.js"></script>
-	<script>
-		// Or, to start a slideshow, just pass in an array of images
-		$(".slideshow").backstretch([
-			"mockup_images/img1.jpg",
-			"mockup_images/img2.jpg",
-			"mockup_images/img3.jpg"
-		],
-		{
-			duration: 4000
-		});
-	</script>
 </body>
 
 </html>
