@@ -144,30 +144,7 @@ footer {
 	padding-top: 17px;
 }
 
-/*Inside about & members page*/
-.about, .contact, .members {
-	margin-top: 5%;
-	margin-bottom: 5%;
-	color: red;
-}
-.about {
-	text-align: center;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-}
-
-.contact {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	height: 50vh;
-}
+/*Inside contacts page*/
 
 form {
 	max-width: 80%;
@@ -221,11 +198,6 @@ textarea {
 }
 
 /*For the members page, polaroid framed images*/
-.members h2 {
-	color: red;
-}
-
-
 ul.polaroids {
 	list-style-type: none;
 	display: flex;
