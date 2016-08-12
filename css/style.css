@@ -175,6 +175,12 @@ iframe {
 }
 
 /*At least this wide for these settings to apply*/
+@media screen and (max-width: 546px) {
+	.info-boxes {
+		flex-wrap: nowrap;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	iframe {
 		width: 400px;
