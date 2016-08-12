@@ -7,6 +7,7 @@
 	<title>Mariachi Emperadores De Puebla</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/landscape.css" rel="stylesheet" media="(orientation: landscape)">
 	<link href="https://fonts.googleapis.com/css?family=Parisienne|Roboto+Condensed:400,700" rel="stylesheet">
 	<script src="https://use.fontawesome.com/dd95f0edce.js">
 	</script>
@@ -15,23 +16,20 @@
 <body>
 	<div class="container-fluid">
 		<header class="row">
-			<div class="col-sm-12 col-md-9">
-				<!-- Group Name and Logo -->
+			<div class="col-sm-12 col-md-12 first-line">
 				<h1 class="title">Mariachi Emperadores De Puebla</h1>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-3 social-media" id="header-social">
+				<div class="social-media" id="header-social">
 				<ul>
 					<a href="mailto:emperadoresct@gmail.com">
 						<li class="gmail"><i aria-hidden="true" class="fa fa-envelope"></i>
 						</li>
 					</a>
-					<!-- <a href="#"><li class="twitter"><i aria-hidden="true" class="fa fa-twitter"></i></li></a> -->
 					<a href="https://www.facebook.com/MariachiConnecticut/">
 						<li class="facebook"><i aria-hidden="true" class="fa fa-facebook-official"></i>
 						</li>
 					</a>
-					<!-- <a href=""><li class="youtube"><i aria-hidden="true" class="fa fa-youtube"></i></li></a> -->
 				</ul>
+				</div>
 			</div>
 			<div class="col-md-12">
 				<h2 class="mobile">(860) 555-1234</h2>
@@ -57,18 +55,17 @@
 		</header>
 		<div class="row">
 			<div class="col-md-12 slideshow">
-				<!-- TODO: Welcome video embedded -->
-				<section class="col-sm-12 col-md-12 info-boxes">
-					<div class="col-sm-12 col-md-5 welcome-video">
+				<section class="info-boxes">
+					<div class="welcome-video">
 						<h4>Welcome!</h4>
-						<iframe width="350" height="197" class="welcome" src="https://www.youtube.com/embed/Lg4VpPuYoTw?rel=0" frameborder="0" allowfullscreen></iframe>
+						<iframe width="200" height="200" class="welcome" src="https://www.youtube.com/embed/Lg4VpPuYoTw?rel=0" frameborder="0" allowfullscreen></iframe>
 					</div>
-					<div class="col-sm-12 col-md-2 extra-space">
+					<div class="extra-space">
 						<a href="contact.html"><h3>Book Us!</h3> </a>
 					</div>
-					<div class="col-sm-12 col-md-5 upcoming-events">
+					<div class="upcoming-events">
 						<h4>Upcoming Events</h4>
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMariachiConnecticut%2F&tabs=events&width=350&height=200&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="350" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMariachiConnecticut%2F&tabs=events&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 					</div>
 				</section>
 			</div>
@@ -77,45 +74,43 @@
 			<div class="col-md-12 hr">
 				<hr>
 			</div>
-			<div class="col-sm-12 col-md-5 footer-menu">
-				<!-- TODO: Nav menu needs to be clickable in mobile/small screen -->
-				<nav>
+			<div class="col-md-12 footer-info">
+				<div class="col-md-5 footer-menu">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a>
+							</li>
+							<li><a href="about.html">About</a>
+							</li>
+							<li><a href="members.html">Members</a>
+							</li>
+							<li><a href="contact.html">Contact Us</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-5 social-media" id="footer-social">
 					<ul>
-						<li><a href="index.html">Home</a>
-						</li>
-						<li><a href="about.html">About</a>
-						</li>
-						<li><a href="members.html">Members</a>
-						</li>
-						<li><a href="contact.html">Contact Us</a>
-						</li>
+						<a href="mailto:emperadoresct@gmail.com">
+							<li class="gmail"><i aria-hidden="true" class="fa fa-envelope"></i>
+							</li>
+						</a>
+						<a href="https://www.facebook.com/MariachiConnecticut/">
+							<li class="facebook"><i aria-hidden="true" class="fa fa-facebook-official"></i>
+							</li>
+						</a>
 					</ul>
-				</nav>
-			</div>
-			<div class="col-sm-12 col-md-5 social-media" id="footer-social">
-				<ul>
-					<a href="mailto:emperadoresct@gmail.com">
-						<li class="gmail"><i aria-hidden="true" class="fa fa-envelope"></i>
-						</li>
-					</a>
-					<!-- <a href="#"><li class="twitter"><i aria-hidden="true" class="fa fa-twitter"></i></li></a> -->
-					<a href="https://www.facebook.com/MariachiConnecticut/">
-						<li class="facebook"><i aria-hidden="true" class="fa fa-facebook-official"></i>
-						</li>
-					</a>
-					<!-- <a href="#"><li class="youtube"><i aria-hidden="true" class="fa fa-youtube"></i></li></a> -->
-				</ul>
-			</div>
-			<div class="col-md-2 credit-logo">
-				<p id="credit">Created by</p>
-				<img id="logo" src="mockup_images/white_logo.png" alt="Karla's Logo">
+				</div>
+				<div class="col-md-2 credit-logo">
+					<p id="credit">Created by</p>
+					<img id="logo" src="mockup_images/white_logo.png" alt="Karla's Logo">
+				</div>
 			</div>
 		</footer>
 	</div>
 	<script src="js/jQuery.js"></script>
 	<script src="js/jquery.backstretch.min.js"></script>
 	<script>
-		// Or, to start a slideshow, just pass in an array of images
 		$(".slideshow").backstretch([
 			"mockup_images/img1_resized.jpg",
 			"mockup_images/img2_resized.jpg",

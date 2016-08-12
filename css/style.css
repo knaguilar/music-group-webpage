@@ -40,48 +40,46 @@ footer {
 }
 
 /*Inside header elements*/
-
 .title {
 /*On right during big screens, change to center on smaller screens*/
-	text-align: center;
 	font-family: 'Parisienne', cursive;
 	font-size: 50px;
+	margin-bottom: 0;
+	z-index: 1;
+}
+
+#header-social {
+	z-index: 2;
 }
 
 .social-media li {
 	padding: 10px;
 }
 
-#header-social li, .extra-space h3 {
-	font-size: 30px;
+#header-social li, .extra-space h3, #footer-social li, h4 {
+	font-size: 25px;
 }
 
-.nav-menu {
-	min-height: 28px;
-}
-
-/*Adjustements to nav bar*/
-.nav-menu li, #footer-social li {
+.nav-menu, .footer-menu {
 	font-size: 20px;
 }
 
-.mobile, .nav-menu li, .welcome-video, .upcoming-events, .extra-space h3 {
+.extra-space h3 {
+	margin-top: 10px;
+}
+
+.title, .mobile, .welcome-video, .upcoming-events, .extra-space h3 {
 	text-align: center;
 }
 
-.nav-menu ul, .social-media ul, .footer-menu ul {
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.nav-menu ul, .footer-menu ul {
 	list-style-type: none;
 	width: 100%;
-}
-
-.nav-menu li {
-/*for smaller screens, float center*/
-	float: left;
-	width: 25%;
-}
-
-.nav-menu li:last-child {
-	border-right: none;
 }
 
 /*For large displays TODO: smaller displays*/
@@ -89,8 +87,6 @@ footer {
 	height: 20px;
 	margin: 0 auto;
 	display: block;
-/*	padding-left: 50px;*/
-	;
 }
 
 .img-responsive {
@@ -98,31 +94,65 @@ footer {
 }
 
 /*Elements inside Slideshow*/
-
-.welcome-video, .upcoming-events {
-	padding-bottom: 20px;
-}
-
 .extra-space {
 	border: 5px solid white;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom: 20px;
-}
-
-.social-media ul, .footer-menu ul, .slideshow, .credit-logo {
-	display: flex;
-	flex-direction: row;
 }
 
 .slideshow {
 	height: 100vh;
-	flex-wrap: wrap;
+	display: flex;
 	justify-content: center;
-	align-items: flex-end;
+}
+
+.info-boxes {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+	padding-bottom: 10px;
+}
+
+.extra-space {
+	order: 1;
+}
+
+.welcome-video, .upcoming-events {
+	order: 2;
+}
+
+iframe {
+	width: 230px;
+	height: 169px;
 }
 
 /*Elements inside footer*/
+.social-media ul, .footer-menu ul, .nav-menu ul, .credit-logo {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-info {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#footer-social, .credit-logo {
+		flex: 1 0 50%;
+		order: 2;
+}
+
+.footer-menu {
+		flex: 0 1 100%;
+		order: 1;
+		padding-right: 0;
+		padding-left: 0;
+}
 
 .social-media ul {
 	justify-content: center;
@@ -130,7 +160,7 @@ footer {
 	align-content: center;
 }
 
-.footer-menu ul {
+.footer-menu ul, .nav-menu ul {
 	justify-content: space-around;
 	align-items: center;
 }
@@ -144,248 +174,11 @@ footer {
 	padding-top: 17px;
 }
 
-/*Inside contacts page*/
-
-form {
-	max-width: 80%;
-    /* Just to center the form on the page */
-    margin: 0 auto;
-    /* To see the outline of the form */
-    padding: 1em;
-    border: 1px solid red;
-    border-radius: 1em;
-}
-/*section of form*/
-label {
-    display: inline-block;
-    width: 33%;
-    text-align: left;
-    margin-bottom: 3%;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-/*location where user inputs info*/
-input, textarea {
-    /* To give the same size to all text field */
-    width: 100%;
-    /* To harmonize the look & feel of text field border */
-    border: 1px solid #999;
-    margin-bottom: 3%;
-}
-
-/*the outer box where users input info*/
-input:focus, textarea:focus {
-    /* To give a little highlight on active elements */
-    border-color: #000;
-}
-
-textarea {
-    /* To properly align multiline text fields with their labels */
-    vertical-align: top;
-
-    /* To give enough room to type some text */
-    /*height: 100%;*/
-
-    /* To allow users to resize any textarea vertically
-       It does not work on all browsers */
-    resize: vertical;
-}
-
-/*the button to submit the form*/
-.button {
-    text-align: center;
-}
-
-/*For the members page, polaroid framed images*/
-ul.polaroids {
-	list-style-type: none;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: space-around;
-	justify-content: space-around;
-}
-
-ul.polaroids p {
-	text-align: center;
-	color: red;
-  	font-size: 20px;
-  	font-family: 'Parisienne', cursive;
-  	vertical-align: middle;
-  	padding-top: 10%;
-}
-
-ul.polaroids li {
-	border: 10px solid #fff;
-  	border-bottom: 25px solid #fff;
-    -webkit-box-shadow: 3px 3px 3px #777;
-    -moz-box-shadow: 3px 3px 3px #777;
-    box-shadow: 3px 3px 3px #777;
-    background-color: #fff;
-    margin: 10px;
-
-}
-
-ul.polaroids li {
-  -webkit-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
-}
-
-/* Rotate all even images 2 degrees */
-ul.polaroids li:nth-child(even) {
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-}
-
-/* Don't rotate every third image, but offset its position */
-ul.polaroids li:nth-child(3) {
-  -webkit-transform: none;
-  -moz-transform: none;
-  position: relative;
-  top: -5px;
-}
-
-/* Rotate every fifth image by 5 degrees and offset it */
-ul.polaroids li:nth-child(5) {
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  position: relative;
-  right: 5px;
-}
-
-/* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
-ul.polaroids li:hover {
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  position: relative;
-  z-index: 5;
-}
-
-/* Add drop shadows and smooth out the transition (Safari only) */
-ul.polaroids li {
-  -webkit-transition: -webkit-transform .15s linear;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-}
-
-/* On hover, darken the shadows a bit */
-ul.polaroids li {
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-}
-
-
-/*--------------------------------------------------------------------*/
-@media only screen and (orientation: landscape) {
-	.title {
-		text-align: right;
-	}
-
-	.credit-logo {
-		justify-content: flex-end;
-	}
-
-	.extra_space {
-		margin: 0 auto;
-	};
-}
-
-/*For landscape mode small display*/
-/*Adjusted from 780 to accomodate wider screens*/
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 780px)
-and (orientation: landscape), screen and (min-device-width : 320px)
-and (max-device-width : 375px) {
-	/*Landscape and small device widths even if not landscape*/
-	.welcome-video, .upcoming-events {
-		display: none;
-	}
-
-	.extra-space {
-		margin: 0 auto;
-	}
-
-	.title {
-		text-align: center;
-	}
-
-	.credit-logo {
-		justify-content: center;
-		text-align: center;
-	}
-
-	.nav-menu ul {
-		padding-left: 0;
-	}
-
-	.slideshow {
-		justify-content: center;
-		align-items: center;
-	};
-}
-
-/*TODO: Media querie for 361 - 394 make the boxes smaller...414?*/
-@media screen and (min-width: 376) and (max-width: 414px) and (min-height: 538px) {
-	/*.title {
-		text-align: center;
-	}*/
-	.welcome {
-		width: 250px;
-		height: 141px;
-	}
-
-	.fb-plugin {
-		width: 250px;
-		height: 150px;
-	}
-
-	section {
-		padding-right: 0;
-	}
-
-
-/*For mobile*/
-@media screen and (min-width: 415) and (max-width: 534px) and (min-height: 538px) {
-	/*.title {
-		text-align: center;
-	}*/
-		.greca {
-		padding-left: 10px;
-	}
-
-	.nav-menu li, .footer-menu li {
-		font-size: 15px;
-	}
-
-	.nav-menu ul, .footer-menu ul, .social-media ul, #credit {
-		padding-left: 0;
-		padding-top: 0;
-	}
-
-	.welcome {
-		width: 300px;
-		height: 169px;
-	}
-
-	section, .welcome-video, .upcoming-events {
-		padding-right: 0;
-		padding-left: 0;
-	}
-
-	.fb-plugin {
-		width: 300px;
+/*At least this wide for these settings to apply*/
+@media screen and (min-width: 768px) {
+	iframe {
+		width: 400px;
 		height: 300px;
-	}
 
-	.slideshow {
-		justify-content: center;
-		height: 140vh;
 	}
-
-	.credit-logo {
-		justify-content: center;
-		text-align: center;
-	};
 }

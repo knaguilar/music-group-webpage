@@ -1,0 +1,87 @@
+@media screen and (min-width : 880px)
+and (orientation: landscape) {
+	.first-line {
+		display: inline-block;
+	}
+
+	#header-social {
+		float: right;
+		margin-top: -60px;
+	}
+	.extra-space {
+		align-self: center;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.info-boxes {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	.welcome-video, .upcoming-events, .extra-space {
+		order: 2;
+	}
+	.welcome-video, .upcoming-events {
+		width: 42%;
+	}
+	.extra-space {
+		width: 16%;
+	}
+
+	#footer-social, .footer-menu {
+		flex: 0 1 42%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.credit-logo {
+		flex: 0 1 16%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	iframe {
+		width: 350px;
+		height: 215px;
+	}
+}
+
+@media screen and (max-width : 930px)
+and (orientation: landscape) {
+	.info-boxes {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.welcome-video, .upcoming-events {
+   		flex: 1 0 50%;
+   		order: 2;
+   }
+
+   .extra-space {
+   		flex: 0 1 100%;
+   		order: 1;
+   		margin-left: 35%;
+   		margin-right: 35%;
+	}
+
+	.slideshow {
+		height: 110vh;
+	}
+
+	.footer-menu {
+		flex: 0 1 100%;
+		order: 1;
+	}
+
+	.credit-logo, #footer-social {
+		flex: 1 0 50%;
+		order: 2;
+	}
+	iframe {
+		width: 230px;
+		height: 200px;
+	};
+}
