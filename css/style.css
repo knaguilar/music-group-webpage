@@ -185,6 +185,12 @@ iframe {
 	iframe {
 		width: 400px;
 		height: 300px;
-
 	}
+	ul.polaroids li:hover {
+		-webkit-transform: scale(1.25);
+		-moz-transform: scale(1.25);
+		position: relative;
+		z-index: 5;
+}
+
 }

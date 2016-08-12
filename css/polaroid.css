@@ -56,12 +56,12 @@ ul.polaroids li:nth-child(5) {
 }
 
 /* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
-ul.polaroids li:hover {
+/*ul.polaroids li:hover {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
   position: relative;
   z-index: 5;
-}
+}*/
 
 /* Add drop shadows and smooth out the transition (Safari only) */
 ul.polaroids li {
