@@ -80,6 +80,7 @@ ul {
 .nav-menu ul, .footer-menu ul {
 	list-style-type: none;
 	width: 100%;
+	margin-bottom: 0;
 }
 
 /*For large displays TODO: smaller displays*/
