@@ -3,10 +3,10 @@
 $EmailFrom = "website@gmail.com";
 $EmailTo = "kn.aguilar7@gmail.com";
 $Subject = "New Gig requested from website!";
-$Name = Trim(stripslashes($_POST['Name']));
-$Tel = Trim(stripslashes($_POST['Tel']));
-$Email = Trim(stripslashes($_POST['Email']));
-$Message = Trim(stripslashes($_POST['Message']));
+$Name = Trim(stripslashes($_GET['Name']));
+$Tel = Trim(stripslashes($_GET['Tel']));
+$Email = Trim(stripslashes($_GET['Email']));
+$Message = Trim(stripslashes($_GET['Message']));
 
 // validation
 $validationOK=true;
