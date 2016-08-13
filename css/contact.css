@@ -44,7 +44,6 @@ textarea {
     resize: vertical;
 }
 
-/*the button to submit the form*/
-.button {
-    text-align: center;
+.contact input.submit-button {
+    background-color: #fff;
 }

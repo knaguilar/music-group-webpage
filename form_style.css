@@ -6,7 +6,6 @@
 body {
 	font-size: 62.5%;
 	font-family: Helvetica, sans-serif;
-	background: url(images/stripe.png) repeat;
 }
 
 p {
@@ -16,7 +15,7 @@ p {
 
 #page-wrap {
 	width: 660px;
-	background: white;
+	background: blue;
 	padding: 20px 50px 20px 50px;
 	margin: 20px auto;
 	min-height: 500px;
