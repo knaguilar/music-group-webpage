@@ -1,105 +1,42 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<head></head>
+<head>
+	<title>A Nice &amp; Simple Contact Form</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
 
 <body>
-  <form name="contactform" method="post" action="email.php">
 
-  <table width="450px">
+	<div id="page-wrap">
+		<h1>Contact Us!</h1>
+		<div id="contact-area">
+			
+			<form method="post" action="contactengine.php">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" />
+				
+				<label for="City">City:</label>
+				<input type="text" name="City" id="City" />
+	
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" />
+				
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
 
-  <tr>
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+			
+			<div style="clear: both;"></div>
 
-   <td valign="top">
+		</div>
+	
+	</div>
 
-    <label for="first_name">First Name *</label>
-
-   </td>
-
-   <td valign="top">
-
-    <input  type="text" name="first_name" maxlength="50" size="30">
-
-   </td>
-
-  </tr>
-
-  <tr>
-
-   <td valign="top"">
-
-    <label for="last_name">Last Name *</label>
-
-   </td>
-
-   <td valign="top">
-
-    <input  type="text" name="last_name" maxlength="50" size="30">
-
-   </td>
-
-  </tr>
-
-  <tr>
-
-   <td valign="top">
-
-    <label for="email">Email Address *</label>
-
-   </td>
-
-   <td valign="top">
-
-    <input  type="text" name="email" maxlength="80" size="30">
-
-   </td>
-
-  </tr>
-
-  <tr>
-
-   <td valign="top">
-
-    <label for="telephone">Telephone Number</label>
-
-   </td>
-
-   <td valign="top">
-
-    <input  type="text" name="telephone" maxlength="30" size="30">
-
-   </td>
-
-  </tr>
-
-  <tr>
-
-   <td valign="top">
-
-    <label for="comments">Comments *</label>
-
-   </td>
-
-   <td valign="top">
-
-    <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-
-   </td>
-
-  </tr>
-
-  <tr>
-
-   <td colspan="2" style="text-align:center">
-
-    <input type="submit" value="Submit">
-
-   </td>
-
-  </tr>
-
-  </table>
-
-  </form>
 </body>
+
 </html>
