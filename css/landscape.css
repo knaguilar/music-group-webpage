@@ -30,7 +30,7 @@ and (orientation: landscape) {
 	.welcome-video {
 		padding-bottom: 10%;
 	}
-	
+
 	.welcome-video, .upcoming-events, .extra-space {
 		order: 2;
 	}
@@ -42,13 +42,13 @@ and (orientation: landscape) {
 	}
 
 	#footer-social, .footer-menu {
-		flex: 0 1 42%;
+		flex: 0 1 33%;
 		padding-right: 0;
 		padding-left: 0;
 	}
 
 	.credit-logo {
-		flex: 0 1 16%;
+		flex: 0 1 33%;
 		padding-right: 0;
 		padding-left: 0;
 	}
