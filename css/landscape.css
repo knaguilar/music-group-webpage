@@ -11,6 +11,7 @@ and (orientation: landscape) {
 	.extra-space {
 		align-self: center;
 	}
+
 	ul.polaroids li:hover {
 		-webkit-transform: scale(1.25);
 		-moz-transform: scale(1.25);
@@ -26,6 +27,10 @@ and (orientation: landscape) {
 		align-items: flex-end;
 	}
 
+	.welcome-video {
+		padding-bottom: 10%;
+	}
+	
 	.welcome-video, .upcoming-events, .extra-space {
 		order: 2;
 	}
