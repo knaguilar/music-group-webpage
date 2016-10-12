@@ -38,8 +38,13 @@ function displayNavigation() {
 	}
 }
 
+function addGreca() {
+	$('header > .greca').append('<picture><source class="img-responsive" srcset="mockup_images/greca-header-sm.png" media="(max-width: 476px)" ><source class="img-responsive" srcset="mockup_images/greca-header-lg.png" ><img class="img-responsive" src="mockup_images/greca-header-lg.png" alt="greca decoration" ></picture>');
+}
+
 $(document).ready(function() {
 	//code goes here
 	displaySocialButtons();
 	displayNavigation();
+	addGreca();
 });
