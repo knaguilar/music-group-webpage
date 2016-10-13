@@ -25,7 +25,7 @@ function displayForm() {
 	$('.form > form').append('<input type="hidden" name="_subject" value="New request for a gig!" />');
 	$('.form > form').append('<input type="submit" name="submit" value="Submit" class="submit-button" />');
 	$('.form > form').append('<input type="text" name="_gotcha" style="display:none" />');
-	$('.form > form').append('<input type="hidden" name="_next" value="thanks.html" />');
+	$('.form > form').append('<input type="hidden" name="_next" value="https://knaguilar.github.io/music-group-webpage/thanks.html" />');
 }
 
 function displayThanks() {
