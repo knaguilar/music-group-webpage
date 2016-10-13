@@ -12,6 +12,15 @@ body, a {
 	color: #fff;
 	font-family: 'Roboto Slab', sans-serif;
 }
+
+a:hover {
+	background-color: #fff;
+    color: rgba(254,27,10,1);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 /*Background color on header and footer*/
 header {
 	background: red;

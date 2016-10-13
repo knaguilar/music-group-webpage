@@ -10,7 +10,12 @@ function displayWelcomeSection() {
 var photos = [
 			"mockup_images/img1_resized.jpg",
 			"mockup_images/img2_resized.jpg",
-			"mockup_images/img3_resized.jpg"
+			"mockup_images/img3_resized.jpg",
+			"mockup_images/group2.jpg",
+			"mockup_images/stage.jpg",
+			"mockup_images/stage3.jpg",
+			"mockup_images/stage2.jpg"
+
 		];
 
 $(document).ready(function() {

@@ -17,10 +17,10 @@ var formFields = [
 
 function displayContactSection() {
 	$('.contact-details > .contact-person').prepend('<h2 class="cursive-font">Contact Details</h2>');
-	$('.contact-details > .contact-person').append('<p><strong>Person of Contact:</strong> Karlo Magno</p><p><strong>Phone Number:</strong> (203) 206-2706</p><p><strong>Email:</strong> emperadoresct@gmail.com</p>');
+	$('.contact-details > .contact-person').append('<p><strong>Person of Contact:</strong> Karlo Magno</p><p><strong>Phone Number:</strong> (203) 206-2706</p><p><strong>Email:</strong> emperadoresct2000@gmail.com</p>');
 	$('.short').append('<h3>From Waterbury, Connecticut</h3><h3>To all of New England!</h3><h3>Music for all occasions.</h3>');
 	$('.contact-title').append('<h1>Contact Us!</h1>');
-	$('.form').append('<form method="post" action="https://formspree.io/emperadoresct@gmail.com"></form>');
+	$('.form').append('<form method="post" action="https://formspree.io/emperadoresct2000@gmail.com"></form>');
 	for (var i=0; i < formFields.length; i++) {
 		var field = formFields[i];
 		$('.form > form').append('<label for="'+ field.label +'">'+ field.label +':</label>');
