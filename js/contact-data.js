@@ -15,11 +15,7 @@ var formFields = [
 	}];
 
 
-function displayContactSection() {
-	$('.contact-details > .contact-person').prepend('<h2 class="cursive-font">Contact Details</h2>');
-	$('.contact-details > .contact-person').append('<p><strong>Person of Contact:</strong> Karlo Magno</p><p><strong>Phone Number:</strong> (203) 206-2706</p><p><strong>Email:</strong> emperadoresct2000@gmail.com</p>');
-	$('.short').append('<h3>From Waterbury, Connecticut</h3><h3>To all of New England!</h3><h3>Music for all occasions.</h3>');
-	$('.contact-title').append('<h1>Contact Us!</h1>');
+function displayForm() {
 	$('.form').append('<form method="post" action="https://formspree.io/emperadoresct2000@gmail.com"></form>');
 	for (var i=0; i < formFields.length; i++) {
 		var field = formFields[i];
@@ -29,6 +25,20 @@ function displayContactSection() {
 	$('.form > form').append('<input type="hidden" name="_subject" value="New request for a gig!" />');
 	$('.form > form').append('<input type="submit" name="submit" value="Submit" class="submit-button" />');
 	$('.form > form').append('<input type="text" name="_gotcha" style="display:none" />');
+	$('.form > form').append('<input type="hidden" name="_next" value="thanks.html" />');
+}
+
+function displayThanks() {
+	$('.thanks').append('<h3>Thank you for your request. We will get it contact with you shortly.</h3>');
+}
+
+function displayContactSection() {
+	$('.contact-details > .contact-person').prepend('<h2 class="cursive-font">Contact Details</h2>');
+	$('.contact-details > .contact-person').append('<p><strong>Person of Contact:</strong> Karlo Magno</p><p><strong>Phone Number:</strong> (203) 206-2706</p><p><strong>Email:</strong> emperadoresct2000@gmail.com</p>');
+	$('.short').append('<h3>From Waterbury, Connecticut</h3><h3>To all of New England!</h3><h3>Music for all occasions.</h3>');
+	$('.contact-title').append('<h1>Contact Us!</h1>');
+	displayForm();
+	displayThanks();
 }
 
 $(document).ready(function() {
